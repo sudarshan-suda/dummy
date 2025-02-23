@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+      }
+
+      div#ani {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+        animation: exc 4s 1s 1;
+        animation-iteration-count:5 ;
+
+      }
+
+      @keyframes exc {
+        0% { background-color: blue; left: 0px; top: 0px; }
+        25% { background-color: blueviolet; left: 200px; top: 0px; }
+        50% { background-color: pink; left: 200px; top: 300px; }
+        75% { background-color: red; left: 0px; top: 300px; }
+        100% { background-color: rgb(231, 3, 158); left: 0px; top: 0px; }
+      }
+
+      div#ani2 {
+        background-color: blue;
+        left: 220px; /* Adjusted to align next to ani */
+        top: 0px;
+        animation: exc1 4s 1s 1;
+        animation-iteration-count:5 ;
+      }
+
+      @keyframes exc1 {
+        0% { background-color: blue; left: 220px; top: 0px; }
+        25% { background-color: blueviolet; left: 420px; top: 0px; }
+        50% { background-color: pink; left: 420px; top: 300px; }
+        75% { background-color: red; left: 220px; top: 300px; }
+        100% { background-color: rgb(231, 3, 158); left: 220px; top: 0px; }
+      }
+    </style>
+    <title>Aligned Animation</title>
+</head>
+<body>
+    <div id="ani"></div>
+    <div id="ani2"></div>
+</body>
+</html>
