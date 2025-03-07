@@ -1,4 +1,39 @@
-<p> hello git 
-    verified the changes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <h1 class="cnt">0</h1>
+    <button id="decrease">-</button>
+    <button id="increase">+</button>
     
-</p>
+    <script>
+        let count = 0;
+        const countDisplay = document.querySelector('.cnt');
+        const decreaseBtn = document.getElementById('decrease');
+        const increaseBtn = document.getElementById('increase');
+        
+        // Update display initially
+        countDisplay.textContent = count;
+        
+        // Add event listeners to buttons
+        decreaseBtn.addEventListener('click', function() {
+            if (count == 0){
+                alert ("count is 0 we canot decrese");
+                return ;
+            }
+            count--;
+            countDisplay.textContent = count;
+        });
+        
+        increaseBtn.addEventListener('click', function() {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>

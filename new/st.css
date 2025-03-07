@@ -1,0 +1,15 @@
+button{
+    background-color: aquamarine;
+    color: rgb(144, 10, 10);
+    border-radius: 1.5cm;
+    padding: 3px 7px; 
+    margin:  auto;
+    
+    /* padding and sont size helps is for butoon size */
+    font-size: 1.1em;
+}
+.cnt{
+    font-size:2em ; 
+    text-align: center;
+
+}
